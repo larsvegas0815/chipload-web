@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an idea or improvement for Chipload.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the existing issues first – a 👍 on an existing request helps too.
+        Deutsch ist auch okay.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the job or workflow, not only the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could Chipload help?
+  - type: textarea
+    id: other
+    attributes:
+      label: Other tools / references
+      description: How do other programs (Estlcam, Carbide Create, gSender, …) handle this, if you know?

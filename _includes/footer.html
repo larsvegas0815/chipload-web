@@ -1,0 +1,31 @@
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign issues = "https://github.com/" | append: site.repo | append: "/issues" -%}
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="{{ t.home | relative_url }}">
+        <img src="{{ '/assets/img/favicon-64.png' | relative_url }}" alt="" width="24" height="24">
+        <span>Chipload</span>
+      </a>
+      <p class="muted">{{ t.footer.tagline }}</p>
+    </div>
+    <div>
+      <h3>{{ t.footer.support }}</h3>
+      <ul>
+        <li><a href="{{ issues }}/new?template=bug_report.yml">{{ t.footer.bug }}</a></li>
+        <li><a href="{{ issues }}/new?template=feature_request.yml">{{ t.footer.feature }}</a></li>
+        <li><a href="{{ issues }}">{{ t.footer.issues }}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>{{ t.footer.legal }}</h3>
+      <ul>
+        <li><a href="{{ t.imprint_url | relative_url }}">{{ t.footer.imprint }}</a></li>
+        <li><a href="{{ t.privacy_url | relative_url }}">{{ t.footer.privacy }}</a></li>
+        <li><a href="{{ page.alt_url | default: site.data.i18n[t.other_lang].home | relative_url }}" hreflang="{{ t.other_lang }}">{{ t.other_lang_label }}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom muted">© {{ site.time | date: "%Y" }} Chipload</div>
+</footer>

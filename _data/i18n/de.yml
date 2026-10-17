@@ -1,0 +1,131 @@
+lang_name: Deutsch
+other_lang: en
+other_lang_label: English
+home: /de/
+changelog_url: /de/changelog/
+imprint_url: /de/impressum/
+privacy_url: /de/datenschutz/
+
+meta_description: Chipload ist eine kostenlose CAD/CAM- und GRBL-Steuerungs-App für Windows und macOS. Zeichnen oder SVG/DXF importieren, Fräsbahnen planen, in 3D prüfen und den G-Code direkt an die Fräse senden.
+
+nav:
+  features: Funktionen
+  download: Download
+  changelog: Änderungen
+
+hero:
+  eyebrow: CAD/CAM + GRBL-Steuerung
+  title: Von der Zeichnung zum Span.<br>In einer App.
+  lead: Mit Chipload zeichnest oder importierst du ein Motiv, planst die Fräsbahnen, prüfst sie in 3D und fräst direkt auf deiner GRBL-Maschine – ohne zwischen drei Programmen zu wechseln.
+  download: Download
+  download_for: Download für
+  other_platforms: Andere Plattformen
+  free: Kostenloser Download · Windows & macOS
+  screenshot_alt: Chipload mit einem Schneidbrett-Entwurf, Fräsbahnen und der Maschinensteuerung
+
+pillars:
+  - title: Zeichnen
+    text: Formen und Text zeichnen oder SVG und DXF importieren. Fang, Boolesche Operationen und Zahleneingabe – auch als Formel.
+  - title: Planen
+    text: Kontur, Tasche, Ausschneiden mit Haltestegen, Gravur, V-Carve und Bohren. Fräsbahnen wandern mit, wenn du Formen verschiebst oder skalierst.
+  - title: Fräsen
+    text: Job in der 3D-Vorschau prüfen, Maschine nullen, antasten und den G-Code senden – alles im selben Fenster.
+
+features:
+  - id: design
+    label: Zeichnen
+    title: Zeichnen, was du brauchst – importieren, was du hast
+    text: Eine Zeichenfläche, die sich an bekannten Grafikprogrammen orientiert. Alle Maße in Millimetern, bezogen auf den Werkstück-Nullpunkt.
+    points:
+      - Rechtecke mit Eckenradius, Ellipsen, Vielecke, Polylinien, Bézier-Stift und Text mit allen installierten Schriften
+      - SVG- und DXF-Import – lose DXF-Segmente werden automatisch zu geschlossenen Konturen verbunden
+      - Ausrichten, Verteilen und Boolesche Operationen (Vereinigen, Subtrahieren, Schnittmenge, Ausschluss)
+      - Fang an Ecken, Mitten, Zentren, Schnittpunkten und Raster; Zahleneingabe mit Formeln wie <code>120/2+5</code>
+    image: design
+    alt: Zeichenfläche mit Formen, Text und Transformieren-Bereich
+
+  - id: toolpaths
+    label: Fräsbahnen
+    title: Fräsbahnen, die an der Form haften
+    text: Bearbeitungen werden Formen zugewiesen. Verschieben, Skalieren oder Drehen nimmt die Fräsbahn mit.
+    points:
+      - Kontur (außen, innen, auf der Linie), Ausschneiden mit verschiebbaren Haltestegen, Tasche (linear, konzentrisch, Spirale) mit Inseln
+      - Gravur, Bohren (mit Spanbruch) und V-Carve entlang der Mittelachse mit scharfen Ecken
+      - Fasen mit V-Fräser, Eintauchen per Rampe und Helix
+      - Werkzeugbibliothek mit Werkzeugnummern, Werkzeugwechsel per <code>M6</code> oder <code>M0</code>, Bögen (G2/G3) für kompakten G-Code
+    image: toolpaths
+    alt: Fräsbahnen auf der Zeichnung mit Haltestegen und Eintauchpunkten
+
+  - id: preview
+    label: 3D-Vorschau
+    title: Das Ergebnis sehen, bevor die Späne fliegen
+    text: Die 3D-Vorschau zeigt alle Fräsbahnen auf dem Rohteil – Fehler fallen am Bildschirm auf, nicht im Holz.
+    points:
+      - Rohmaterial mit Maßen und Versatz zum Nullpunkt, mit einem Klick um die Zeichnung gelegt
+      - Werkzeugweg für die Zeichnung, einen Helfer oder eine vorhandene G-Code-Datei (<code>.nc</code>, <code>.gcode</code>, <code>.ngc</code>, <code>.tap</code>)
+      - Drehen, Zoomen und Verschieben mit der Maus; Doppelklick setzt die Ansicht zurück
+    image: preview
+    alt: 3D-Vorschau des Schneidbrett-Jobs mit Fräsbahnen auf dem Rohteil
+
+  - id: control
+    label: Maschinensteuerung
+    title: GRBL-Steuerung eingebaut
+    text: Die Maschinensteuerung steht neben jedem Tab. Kein Export, kein zweites Programm.
+    points:
+      - Verfahren per Button oder Ziffernblock – kurz tippen für einen Schritt, halten für Dauerfahrt, die beim Loslassen sofort stoppt
+      - Antasten mit Tastplatte für Z, optional X und Y mit Eckenwahl
+      - Job-Streaming mit Fortschritt, Pause, Stopp und geführtem Werkzeugwechsel
+      - Konsole für eigene Befehle wie <code>$$</code>
+    image: control
+    alt: Maschinensteuerung mit Position, Verfahr-Steuerkreuz und Job-Fortschritt
+
+  - id: helpers
+    label: Helfer
+    title: Helfer für wiederkehrende Jobs
+    text: Manche Aufgaben kommen immer wieder. Dafür gibt es in Chipload ein Formular statt einer Zeichnung.
+    points:
+      - Saftrinne für Schneidbretter – Kugelkopf, Radius- oder Schaftfräser, mit Rampen-Zustellung und resultierender Rinnenbreite
+      - Planfräsen von Brett oder Opferplatte im Mäander entlang X oder Y, mit Bahnabstand und Überstand
+      - Werkzeug- und Maschinendaten werden pro Helfer gespeichert
+    image: helpers
+    alt: Saftrinnen-Helfer mit Formular links und 3D-Vorschau rechts
+
+download:
+  title: Download
+  lead: Chipload ist eine einzelne App – kein Installer, kein Konto.
+  version: Version
+  released: veröffentlicht am
+  changelog: Änderungen
+  none_yet: Die erste öffentliche Version ist in Vorbereitung.
+  coming_soon: Demnächst
+  windows:
+    name: Windows
+    detail: Windows 10/11 · x64
+    file: Chipload.exe
+    note: Die App ist noch nicht signiert. Erscheint SmartScreen, auf <em>Weitere Informationen</em> → <em>Trotzdem ausführen</em> klicken.
+  macos:
+    name: macOS
+    detail: macOS 11 oder neuer · Apple Silicon & Intel
+    file: DMG
+    note: Von Apple signiert und notarisiert. DMG öffnen und Chipload in den Ordner Programme ziehen.
+  linux:
+    name: Linux
+    detail: In Vorbereitung
+  requirements: Benötigt eine Grafikkarte mit Vulkan-, Metal- oder DirectX-12-Unterstützung. Die Maschinensteuerung arbeitet mit GRBL 1.1 und kompatibler Firmware (z. B. grblHAL) über USB-Seriell.
+  safety: Erzeugten G-Code immer prüfen und den Not-Aus in Reichweite halten.
+
+changelog:
+  title: Änderungen
+  lead: Was sich in den einzelnen Versionen geändert hat.
+  empty: Noch keine Versionen veröffentlicht.
+  download: Aktuelle Version herunterladen
+
+footer:
+  tagline: CAD/CAM und GRBL-Steuerung für Hobby-CNC.
+  support: Support
+  bug: Fehler melden
+  feature: Funktion vorschlagen
+  issues: Alle Issues
+  legal: Rechtliches
+  imprint: Impressum
+  privacy: Datenschutz

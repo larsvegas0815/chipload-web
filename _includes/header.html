@@ -1,0 +1,16 @@
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.i18n[lang] -%}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ t.home | relative_url }}">
+      <img src="{{ '/assets/img/favicon-64.png' | relative_url }}" alt="" width="28" height="28">
+      <span>Chipload</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="{{ t.home | relative_url }}#features">{{ t.nav.features }}</a>
+      <a href="{{ t.changelog_url | relative_url }}">{{ t.nav.changelog }}</a>
+      <a class="lang-switch" href="{{ page.alt_url | default: site.data.i18n[t.other_lang].home | relative_url }}" hreflang="{{ t.other_lang }}" lang="{{ t.other_lang }}">{{ t.other_lang | upcase }}</a>
+      <a class="btn btn-small" href="{{ t.home | relative_url }}#download">{{ t.nav.download }}</a>
+    </nav>
+  </div>
+</header>

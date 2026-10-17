@@ -1,0 +1,30 @@
+title: Chipload
+description: CAD/CAM and GRBL machine control in one app – for hobby CNC and small woodshops.
+lang: en
+
+# url/baseurl are set automatically by GitHub Pages (jekyll-github-metadata).
+# Always link with the `relative_url` / `absolute_url` filters.
+
+repo: larsvegas0815/chipload-web
+downloads:
+  windows: Chipload.exe
+  macos: Chipload-macos-universal.dmg
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  releases:
+    output: false
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

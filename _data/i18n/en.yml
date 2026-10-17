@@ -1,0 +1,131 @@
+lang_name: English
+other_lang: de
+other_lang_label: Deutsch
+home: /
+changelog_url: /changelog/
+imprint_url: /de/impressum/
+privacy_url: /de/datenschutz/
+
+meta_description: Chipload is a free CAD/CAM and GRBL control app for Windows and macOS. Draw or import SVG/DXF, plan toolpaths, preview in 3D and send G-code straight to your CNC router.
+
+nav:
+  features: Features
+  download: Download
+  changelog: Changelog
+
+hero:
+  eyebrow: CAD/CAM + GRBL control
+  title: From drawing to chips.<br>In one app.
+  lead: Chipload lets you draw or import a design, plan toolpaths, check them in 3D and run the job on your GRBL machine – without switching between three programs.
+  download: Download
+  download_for: Download for
+  other_platforms: Other platforms
+  free: Free download · Windows & macOS
+  screenshot_alt: Chipload with a cutting board design, toolpaths and the machine control panel
+
+pillars:
+  - title: Design
+    text: Draw shapes and text or import SVG and DXF. Snapping, boolean operations and numeric input – including formulas.
+  - title: Plan
+    text: Contour, pocket, cut-out with tabs, engrave, V-carve and drill. Toolpaths stick to their shapes when you move or scale them.
+  - title: Cut
+    text: Check the job in the 3D preview, zero your machine, probe and send the G-code – all from the same window.
+
+features:
+  - id: design
+    label: Design
+    title: Draw what you need, import the rest
+    text: A drawing workspace modelled after familiar design tools. Everything is in millimetres and relative to the workpiece origin.
+    points:
+      - Rectangles with corner radius, ellipses, polygons, polylines, Bézier pen and text with any installed font
+      - SVG and DXF import – loose DXF segments are joined into closed contours automatically
+      - Align, distribute and boolean operations (union, subtract, intersect, exclude)
+      - Snapping to corners, midpoints, centres, intersections and grid; numeric input with formulas like <code>120/2+5</code>
+    image: design
+    alt: Drawing workspace with shapes, text and the transform panel
+
+  - id: toolpaths
+    label: Toolpaths
+    title: Toolpaths that stay attached
+    text: Assign operations to shapes. Move, scale or rotate a shape and its toolpath follows.
+    points:
+      - Contour (outside, inside, on line), cut-out with draggable tabs, pocket (linear, concentric, spiral) with islands
+      - Engrave, drill (with chip breaking) and V-carve along the medial axis with sharp corners
+      - Chamfers with a V-bit, ramped plunges and helical entry
+      - Tool library with tool numbers, tool changes via <code>M6</code> or <code>M0</code>, arc fitting (G2/G3) for compact G-code
+    image: toolpaths
+    alt: Toolpaths drawn on top of the design with tabs and plunge points
+
+  - id: preview
+    label: 3D preview
+    title: See the result before you cut
+    text: The 3D preview shows every toolpath on your stock, so mistakes show up on screen instead of in the wood.
+    points:
+      - Stock with size and offset to the origin, fitted around the drawing in one click
+      - Toolpath overlay for the drawing, a helper or any existing G-code file (<code>.nc</code>, <code>.gcode</code>, <code>.ngc</code>, <code>.tap</code>)
+      - Orbit, zoom and pan with the mouse; double-click resets the view
+    image: preview
+    alt: 3D preview of the cutting board job with toolpaths on the stock
+
+  - id: control
+    label: Machine control
+    title: Built-in GRBL control
+    text: The machine panel sits next to every tab. No export, no second program.
+    points:
+      - Jog with buttons or numpad – tap for a step, hold for continuous motion that stops the moment you let go
+      - Touch plate probing for Z, optionally X and Y with corner selection
+      - Job streaming with progress, pause, stop and guided tool changes
+      - Console for your own commands like <code>$$</code>
+    image: control
+    alt: Machine control panel with position, jog controls and job progress
+
+  - id: helpers
+    label: Helpers
+    title: Helpers for everyday jobs
+    text: Some jobs come up again and again. For those, Chipload has a form instead of a drawing.
+    points:
+      - Juice groove for cutting boards – ball nose, bull nose or flat end mill, with ramped passes and the resulting groove width
+      - Surfacing / spoilboard flattening in a zigzag along X or Y, with stepover and overhang
+      - Tool and machine settings are stored per helper
+    image: helpers
+    alt: Juice groove helper with form on the left and 3D preview on the right
+
+download:
+  title: Download
+  lead: Chipload is a single app – no installer, no account.
+  version: Version
+  released: released
+  changelog: Changelog
+  none_yet: The first public release is on its way.
+  coming_soon: Coming soon
+  windows:
+    name: Windows
+    detail: Windows 10/11 · x64
+    file: Chipload.exe
+    note: The app is not code-signed yet. If SmartScreen appears, click <em>More info</em> → <em>Run anyway</em>.
+  macos:
+    name: macOS
+    detail: macOS 11 or later · Apple Silicon & Intel
+    file: DMG
+    note: Signed and notarised by Apple. Open the DMG and drag Chipload into Applications.
+  linux:
+    name: Linux
+    detail: In preparation
+  requirements: Needs a GPU with Vulkan, Metal or DirectX 12 support. Machine control works with GRBL 1.1 and compatible firmware (e.g. grblHAL) via USB serial.
+  safety: Always check generated G-code and keep the emergency stop within reach.
+
+changelog:
+  title: Changelog
+  lead: What changed in each release.
+  empty: No releases yet.
+  download: Download latest version
+
+footer:
+  tagline: CAD/CAM and GRBL control for hobby CNC.
+  support: Support
+  bug: Report a bug
+  feature: Suggest a feature
+  issues: All issues
+  legal: Legal
+  imprint: Legal notice
+  privacy: Privacy

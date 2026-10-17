@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign releases = site.releases | sort: "date" | reverse -%}
+<article class="page container-narrow">
+  <h1>{{ t.changelog.title }}</h1>
+  <p class="lead">{{ t.changelog.lead }}</p>
+  {%- if releases.size == 0 %}
+  <p class="muted">{{ t.changelog.empty }}</p>
+  {%- else %}
+  <p><a class="btn btn-primary btn-small" href="{{ t.home | relative_url }}#download">{{ t.changelog.download }}</a></p>
+  {%- for r in releases %}
+  <section class="release" id="v{{ r.version }}">
+    <h2>{{ r.version }} <span class="muted small">{% if page.lang == "de" %}{{ r.date | date: "%d.%m.%Y" }}{% else %}{{ r.date | date: "%B %-d, %Y" }}{% endif %}</span></h2>
+    <div class="prose">{{ r.content | markdownify }}</div>
+  </section>
+  {%- endfor %}
+  {%- endif %}
+</article>

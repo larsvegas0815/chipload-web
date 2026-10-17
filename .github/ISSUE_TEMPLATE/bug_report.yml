@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in Chipload doesn't work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please search the existing issues first.
+        Deutsch ist auch okay.
+  - type: input
+    id: version
+    attributes:
+      label: Chipload version
+      description: Shown in the app under Help → About, or the release you downloaded.
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: "Windows 11 23H2 / macOS 15.1"
+  - type: input
+    id: firmware
+    attributes:
+      label: Controller firmware (if machine-related)
+      description: The welcome message in the console, e.g. `Grbl 1.1h`, or grblHAL build.
+      placeholder: "Grbl 1.1h"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Import the attached SVG
+        2. Add a pocket with a 6 mm end mill
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files, screenshots, logs
+      description: Attach the project (.chip), SVG/DXF, G-code or screenshots if they help. Drag files into this field.
