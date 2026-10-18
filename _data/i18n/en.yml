@@ -110,7 +110,9 @@ download:
     note: Signed and notarised by Apple. Open the DMG and drag Chipload into Applications.
   linux:
     name: Linux
-    detail: In preparation
+    detail: x86_64 · Ubuntu 22.04+, Debian 12+, Fedora 36+ and others
+    file: AppImage
+    note: Make the file executable (<em>Properties</em> → <em>Allow executing as program</em>) and start it. For USB access to the machine, run <code>sudo usermod -aG dialout $USER</code> once and log in again.
   requirements: Needs a GPU with Vulkan, Metal or DirectX 12 support. Machine control works with GRBL 1.1 and compatible firmware (e.g. grblHAL) via USB serial.
   safety: Always check generated G-code and keep the emergency stop within reach.
 

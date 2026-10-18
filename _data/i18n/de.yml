@@ -110,7 +110,9 @@ download:
     note: Von Apple signiert und notarisiert. DMG öffnen und Chipload in den Ordner Programme ziehen.
   linux:
     name: Linux
-    detail: In Vorbereitung
+    detail: x86_64 · Ubuntu 22.04+, Debian 12+, Fedora 36+ u. a.
+    file: AppImage
+    note: Datei ausführbar machen (<em>Eigenschaften</em> → <em>Als Programm ausführen</em>) und starten. Für den USB-Zugriff auf die Fräse einmalig <code>sudo usermod -aG dialout $USER</code> ausführen und neu anmelden.
   requirements: Benötigt eine Grafikkarte mit Vulkan-, Metal- oder DirectX-12-Unterstützung. Die Maschinensteuerung arbeitet mit GRBL 1.1 und kompatibler Firmware (z. B. grblHAL) über USB-Seriell.
   safety: Erzeugten G-Code immer prüfen und den Not-Aus in Reichweite halten.
 
