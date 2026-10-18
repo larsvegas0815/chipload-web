@@ -17,7 +17,7 @@ Deutschland
 ## Kontakt
 
 Kontakt bitte über die [Issues auf GitHub](https://github.com/larsvegas0815/chipload-web/issues).
-E-Mail: codingtube@gmail.com
+<!--E-Mail: codingtube@gmail.com-->
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
