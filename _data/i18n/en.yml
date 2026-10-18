@@ -6,7 +6,7 @@ changelog_url: /changelog/
 imprint_url: /de/impressum/
 privacy_url: /de/datenschutz/
 
-meta_description: Chipload is a free CAD/CAM and GRBL control app for Windows and macOS. Draw or import SVG/DXF, plan toolpaths, preview in 3D and send G-code straight to your CNC router.
+meta_description: Chipload is a free CAD/CAM and GRBL control app for Windows, macOS and Linux. Draw or import SVG/DXF, plan toolpaths, preview in 3D and send G-code straight to your CNC router.
 
 nav:
   features: Features
@@ -20,7 +20,7 @@ hero:
   download: Download
   download_for: Download for
   other_platforms: Other platforms
-  free: Free download · Windows & macOS
+  free: Free download · Windows, macOS & Linux
   screenshot_alt: Chipload with a cutting board design, toolpaths and the machine control panel
 
 pillars:
@@ -110,7 +110,9 @@ download:
     note: Signed and notarised by Apple. Open the DMG and drag Chipload into Applications.
   linux:
     name: Linux
-    detail: In preparation
+    detail: x86_64 AppImage · Ubuntu 22.04 or comparable
+    file: AppImage
+    note: Make it executable (<code>chmod +x</code>) and start it. For machine control your user needs access to the serial port (group <code>dialout</code> or <code>uucp</code>).
   requirements: Needs a GPU with Vulkan, Metal or DirectX 12 support. Machine control works with GRBL 1.1 and compatible firmware (e.g. grblHAL) via USB serial.
   safety: Always check generated G-code and keep the emergency stop within reach.
 

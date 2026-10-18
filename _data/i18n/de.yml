@@ -6,7 +6,7 @@ changelog_url: /de/changelog/
 imprint_url: /de/impressum/
 privacy_url: /de/datenschutz/
 
-meta_description: Chipload ist eine kostenlose CAD/CAM- und GRBL-Steuerungs-App für Windows und macOS. Zeichnen oder SVG/DXF importieren, Fräsbahnen planen, in 3D prüfen und den G-Code direkt an die Fräse senden.
+meta_description: Chipload ist eine kostenlose CAD/CAM- und GRBL-Steuerungs-App für Windows, macOS und Linux. Zeichnen oder SVG/DXF importieren, Fräsbahnen planen, in 3D prüfen und den G-Code direkt an die Fräse senden.
 
 nav:
   features: Funktionen
@@ -20,7 +20,7 @@ hero:
   download: Download
   download_for: Download für
   other_platforms: Andere Plattformen
-  free: Kostenloser Download · Windows & macOS
+  free: Kostenloser Download · Windows, macOS & Linux
   screenshot_alt: Chipload mit einem Schneidbrett-Entwurf, Fräsbahnen und der Maschinensteuerung
 
 pillars:
@@ -110,7 +110,9 @@ download:
     note: Von Apple signiert und notarisiert. DMG öffnen und Chipload in den Ordner Programme ziehen.
   linux:
     name: Linux
-    detail: In Vorbereitung
+    detail: x86_64-AppImage · Ubuntu 22.04 oder vergleichbar
+    file: AppImage
+    note: Ausführbar machen (<code>chmod +x</code>) und starten. Für die Maschinensteuerung braucht dein Benutzer Zugriff auf die serielle Schnittstelle (Gruppe <code>dialout</code> bzw. <code>uucp</code>).
   requirements: Benötigt eine Grafikkarte mit Vulkan-, Metal- oder DirectX-12-Unterstützung. Die Maschinensteuerung arbeitet mit GRBL 1.1 und kompatibler Firmware (z. B. grblHAL) über USB-Seriell.
   safety: Erzeugten G-Code immer prüfen und den Not-Aus in Reichweite halten.
 
