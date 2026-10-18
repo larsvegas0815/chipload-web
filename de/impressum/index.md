@@ -8,22 +8,20 @@ sitemap: false
 
 ## Angaben gemäß § 5 DDG
 
-<!-- TODO: vor dem Livegang ausfüllen -->
-**[Vorname Nachname]**<br>
-[Straße Hausnummer]<br>
-[PLZ Ort]<br>
+**Thomas Braun**<br>
+c/o IP-Management  #4246<br>
+Ludwig-Erhard-Str. 18<br>
+20459 Hamburg<br>
 Deutschland
 
 ## Kontakt
 
-Kontakt bitte über die [Issues auf GitHub](https://github.com/larsvegas0815/chipload-web/issues).<br>
-E-Mail: [E-Mail-Adresse]
-
-<p class="muted small">Hinweis: Das Impressum muss eine Möglichkeit zur schnellen elektronischen Kontaktaufnahme enthalten. Eine E-Mail-Adresse ist hier rechtlich erforderlich, auch wenn der Support über GitHub läuft. Diesen Hinweis vor dem Livegang entfernen.</p>
+Kontakt bitte über die [Issues auf GitHub](https://github.com/larsvegas0815/chipload-web/issues).
+E-Mail: codingtube@gmail.com
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-[Vorname Nachname], Anschrift wie oben
+Thomas Braun, Anschrift wie oben
 
 ## Haftung für Inhalte und Links
 
