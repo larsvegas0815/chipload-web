@@ -10,8 +10,7 @@ Kurz gesagt: Diese Website setzt keine Cookies, verwendet kein Tracking und läd
 
 ## 1. Verantwortlicher
 
-<!-- TODO: vor dem Livegang ausfüllen -->
-[Vorname Nachname], [Straße Hausnummer], [PLZ Ort], Deutschland – siehe [Impressum]({{ '/de/impressum/' | relative_url }}).
+Thomas Braun – siehe [Impressum]({{ '/de/impressum/' | relative_url }}).
 
 ## 2. Hosting über GitHub Pages
 
