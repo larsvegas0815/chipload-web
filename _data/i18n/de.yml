@@ -92,7 +92,7 @@ features:
 
 download:
   title: Download
-  lead: Chipload ist eine einzelne App – kein Installer, kein Konto.
+  lead: Chipload ist eine einzelne App – kein Konto, kein Abo.
   version: Version
   released: veröffentlicht am
   changelog: Änderungen
@@ -101,8 +101,9 @@ download:
   windows:
     name: Windows
     detail: Windows 10/11 · x64
-    file: Chipload.exe
-    note: Die App ist noch nicht signiert. Erscheint SmartScreen, auf <em>Weitere Informationen</em> → <em>Trotzdem ausführen</em> klicken.
+    file: Installer
+    portable: Portable Version (Chipload.exe, ohne Installation)
+    note: Installiert nach <code>C:\Program Files\Chipload</code>. Die App ist noch nicht signiert. Erscheint SmartScreen, auf <em>Weitere Informationen</em> → <em>Trotzdem ausführen</em> klicken; die Administrator-Abfrage zeigt „Unbekannter Herausgeber“.
   macos:
     name: macOS
     detail: macOS 11 oder neuer · Apple Silicon & Intel

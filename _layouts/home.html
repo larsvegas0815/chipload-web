@@ -93,6 +93,9 @@ layout: default
         {%- else %}
         <span class="btn btn-disabled">{{ t.download.coming_soon }}</span>
         {%- endif %}
+        {%- if latest %}
+        <p class="note"><a href="{{ dl }}{{ site.downloads.windows_portable }}">{{ t.download.windows.portable }}</a></p>
+        {%- endif %}
         <p class="note">{{ t.download.windows.note }}</p>
       </div>
       <div class="dl-card" data-os="macos">

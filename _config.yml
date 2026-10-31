@@ -7,7 +7,8 @@ lang: en
 
 repo: larsvegas0815/chipload-web
 downloads:
-  windows: Chipload.exe
+  windows: Chipload-Setup.exe
+  windows_portable: Chipload.exe
   macos: Chipload-macos-universal.dmg
   linux: Chipload-x86_64.AppImage
 

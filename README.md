@@ -27,7 +27,7 @@ Releases are published automatically by the build workflow of the (private) app 
 
 1. Windows, macOS and Linux builds run.
 2. Release notes are generated from the commit subjects since the previous tag.
-3. A GitHub release with `Chipload.exe`, `Chipload-macos-universal.dmg` and `Chipload-x86_64.AppImage` is created **in this repository**.
+3. A GitHub release with `Chipload-Setup.exe`, `Chipload.exe`, `Chipload-macos-universal.dmg` and `Chipload-x86_64.AppImage` is created **in this repository**.
 4. `_releases/vX.Y.Z.md` is committed here, which triggers the Pages rebuild – version, date and changelog on the site update by themselves.
 
 The download buttons always point to `releases/latest/download/<file>`, so the asset names must stay the same.
